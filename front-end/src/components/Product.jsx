@@ -1,13 +1,13 @@
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Rating from "./Rating";
-import img from "../../images/airpods.jpg";
+
 const Product = ({ product }) => {
   return (
     <Card className="my-3 p-3 rounded">
       <Link to={`/product/${product._id}`}>
         <Card.Img
-          src={img}
+          src={product.image}
           variant="top"
           style={{ aspectRatio: "1/1", objectFit: "cover" }}
           fluid
