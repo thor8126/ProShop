@@ -15,7 +15,7 @@ import HomeScreen from "./screens/HomeScreen.jsx";
 import ProductScreen from "./screens/ProductScreen.jsx";
 import { Provider } from "react-redux";
 import store from "./store.js";
-import CartSreen from "./screens/cartScreen.jsx";
+import CartSreen from "./screens/CartScreen.jsx";
 import LoginScreen from "./screens/LoginScreen.jsx";
 import RegisterScreen from "./screens/RegisterScreen.jsx";
 import ShippingScreen from "./screens/ShippingScreen.jsx";
