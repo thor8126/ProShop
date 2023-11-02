@@ -29,6 +29,11 @@ app.get("/api/config/razorpay", (req, res) => {
     key: process.env.RAZORPAY_API_KEY,
   });
 });
+
+app.get("/test", (req, res) => {
+  res.send("hello");
+});
+
 app.use("/api/products", productRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/orders", orderRoutes);
