@@ -48,7 +48,7 @@ const OrderScreen = () => {
       description: "Test Transaction",
       image: { logo },
       order_id: order.id,
-      callback_url: `http://localhost:5000/api/orders/${orderId}/paymentverification`,
+      callback_url: `https://proshop-68yq.onrender.com/api/orders/${orderId}/paymentverification`,
       prefill: {
         //We recommend using the prefill parameter to auto-fill customer's contact information especially their phone number
         name: `${userInfo.name}`, //your customer's name
