@@ -88,7 +88,7 @@ const updateOrderToPaid = asyncHandler(async (req, res) => {
 // @routes         POST / api/orders/checkout
 // @access         private
 const checkoutOrder = asyncHandler(async (req, res) => {
-  // console.log("inside checkoutOrder");
+  console.log("inside checkoutOrder");
   const { amount } = req.body;
   const order = await checkout(amount);
   res.status(200).json(order);
@@ -99,9 +99,9 @@ const checkoutOrder = asyncHandler(async (req, res) => {
 // access         private
 const paymentverificationOrder = asyncHandler(async (req, res) => {
   const order = await Order.findById(req.params.id);
-  // console.log(req.params.id);
-  // console.log(req.body);
-  // console.log("inside paymentverificationOrder");
+  console.log(req.params.id);
+  console.log(req.body);
+  console.log("inside paymentverificationOrder");
   const { razorpay_payment_id, razorpay_order_id, razorpay_signature } =
     req.body;
   const isAuthentic = await paymentVerification(

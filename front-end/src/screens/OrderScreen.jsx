@@ -27,7 +27,7 @@ const OrderScreen = () => {
 
   const { data } = useGetRazorPayKeyQuery();
   const key = data?.key;
-  // console.log(key);
+  console.log(key);
 
   const [razorPayCheckout] = useRazorPayCheckoutMutation();
 

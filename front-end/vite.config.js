@@ -7,8 +7,8 @@ export default defineConfig({
   server: {
     // proxy requests prefixed '/api'
     proxy: {
-      "/api": "http://localhost:5000",
-      "/uploads": "http://localhost:5000",
+      "/api": "https://proshop-68yq.onrender.com",
+      "/uploads": "https://proshop-68yq.onrender.com",
     },
   },
 });
